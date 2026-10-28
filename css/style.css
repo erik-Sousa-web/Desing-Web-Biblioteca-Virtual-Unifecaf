@@ -1,0 +1,348 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    color: #000000;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
+
+:root {
+    --azul-escuro: #1b3668;   
+    --azul-profundo: #12254a; 
+    --azul-vivo: #1f62b5;     
+    --verde: #2f9e5b;         
+    --verde-claro: #4cc17f;
+    --branco: #ffffff;
+    --texto: #1c2740;
+    --fundo-claro: #f3f6fb;
+}
+
+
+
+#biblioteca,
+#banner,
+#livros,
+#unidades,
+#contatos, 
+#rodape {
+    border-top: 6px solid  #31D283;
+}
+
+
+h2{
+    width: 100%;
+    height: auto;
+    color:#ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 40px 70px;
+}
+
+header{
+    width: 100%;
+    height: 720px;
+    
+    background-color: #0b132b;
+    
+    background-image: url(../assets/imagens/capa.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+header nav{
+    width: 100%;
+    height: 70px;
+    background-color: rgba(0,0,0,40%);
+}
+    
+header nav ul{
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end ;
+}
+
+header nav ul li{
+    width: 200px;
+    height: 100%;
+    margin-right: 20px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #ffffff ;
+
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    letter-spacing: 5px;
+}
+
+header nav ul li:hover{
+    background-color: #31D283;
+    font-weight: bold;
+}
+
+header nav ul li a{
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: monospace;
+}
+
+
+.biblioteca {
+    background-color: var(--azul-profundo);   
+}
+
+.topo {
+    width: 100%;
+    display: grid;
+    gap: 50px;
+    padding-left: 3.1rem;
+    padding-bottom: 1.9rem;
+    grid-template-columns:repeat(3,440px);  
+}
+
+.topo p {
+    color:aliceblue;
+    font-family: monospace;
+    font-size: 20px;
+    padding: 30px 20px ;
+}
+
+.topo img {
+    width: 100%;
+    height: 250px;
+    display: flex;
+}
+
+.baixo{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    gap: 10px;
+    align-items: center;
+    padding:0 18px 1.8rem;
+ 
+}
+
+
+.baixo img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+
+.banner{
+    width: 100%;
+    height: 650px;
+    background-image: url(../assets/imagens/banner.jpg);
+     background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+.livros {
+    height: auto;
+    background-color: var(--azul-vivo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.container-card-livros{
+    width: 100%;
+    margin: 0 auto 40px;
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:50px;
+    justify-content: center;
+}
+
+.card-livros {
+    background-color: #ffffff;
+    width: 100%;                   
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    border-top: 6px solid var(--verde);
+}
+
+.nome-livro {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-size: 40px;
+    letter-spacing: 6px;
+    margin-bottom: 30px;
+
+}
+
+.container-livros{
+    width: 150px;
+    height: 100px;
+    margin: 0 auto 10px;
+}
+
+.container-imagem{
+    width: 170px;
+    height: 190px;
+    margin: 0 auto 20px;
+}
+
+.container-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+.descricao-livro{
+    font-size: 1rem;
+    line-height: 1.7rem;
+    color: #000000;
+    font-family: monospace;
+    margin-bottom: 20px;
+}
+
+
+
+.botao-saiba-mais {
+  background-color: var(--verde-claro);
+  color: #ffffff;
+  padding: 1.0rem 20px;
+  border-radius: 10px; 
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.botao-saiba-mais:hover {
+  background-color: var(--azul-vivo);
+}
+
+
+.unidades{
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.unidades h2{   
+    color: var(--azul-profundo);
+}
+
+
+.unidades-grid{
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    gap: 30px;
+    padding: 0 60px;   
+    align-items: center;
+}
+
+.unidades-grid img{
+    width: 100%;
+    height: 250px;
+    object-fit:cover    ;
+    border-radius: 4px;
+}
+
+.unidades-grid h3{
+    font-family: monospace;
+    font-size: 2.8rem;
+    color: #31D283;
+}
+
+.unidades-grid p{
+    font-size: 20px;
+    font-family: monospace;
+}
+
+
+.contatos{
+    width: 100%;
+}
+.contatos h2{
+    color: var(--azul-profundo);
+}
+.container-contatos{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+    align-items: center;
+
+}
+
+.container-contatos img {
+    width: 100%;
+    max-width: 400px;   
+    height: auto;
+    display: block;
+    margin-bottom: 70px;
+}
+
+.container-contatos p {
+    font-family: monospace;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding:-0 60px 40px;
+
+}
+
+
+
+    
+.rodape {
+    width: 100%;
+    background-color: #061444;
+    padding: 8px 0;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rodape p {
+    color: #ffffff;            
+    font-family: monospace;
+    font-size: 0.5rem;
+    text-align: center;
+}
+
+.rodape img {
+    height: 40px;
+    width: auto;
+    display: block;
+}           
